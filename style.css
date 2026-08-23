@@ -656,3 +656,141 @@ nav a:hover {
         padding: 25px;
     }
 }
+
+/* EXPERIENCE SECTION */
+
+.experience {
+    padding: 120px 8%;
+    position: relative;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 35px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        #8b5cf6,
+        rgba(139, 92, 246, 0.1)
+    );
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -34px;
+    top: 28px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #09090b;
+    border: 2px solid #8b5cf6;
+    box-shadow:
+        0 0 0 5px rgba(139, 92, 246, 0.08),
+        0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.timeline-card {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(15px);
+    transition: 0.35s ease;
+}
+
+.timeline-card:hover {
+    transform: translateX(8px);
+    border-color: rgba(139, 92, 246, 0.35);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #8b5cf6;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.timeline-card h3 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.timeline-card h4 {
+    color: #a78bfa;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.timeline-card p {
+    color: #8f8f99;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.timeline-tags span {
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #c4b5fd;
+    background: rgba(139, 92, 246, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.14);
+}
+
+
+/* EXPERIENCE MOBILE */
+
+@media (max-width: 850px) {
+
+    .experience {
+        padding: 90px 6%;
+    }
+
+    .timeline {
+        padding-left: 28px;
+    }
+
+    .timeline::before {
+        left: 6px;
+    }
+
+    .timeline-dot {
+        left: -29px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .timeline-card {
+        padding: 24px;
+    }
+
+    .timeline-card h3 {
+        font-size: 19px;
+    }
+}
